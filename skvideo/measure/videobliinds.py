@@ -18,7 +18,7 @@ def motion_feature_extraction(frames):
     mblock=10
     h = gen_gauss_window(2, 0.5)
     # step 1: motion vector calculation
-    motion_vectors = blockMotion(frames, method='N3SS', mbSize=mblock, p=np.int(1.5*mblock))
+    motion_vectors = blockMotion(frames, method='ARPS', mbSize=mblock, p=np.int(1.5*mblock))
     motion_vectors = motion_vectors.astype(np.float32)
 
     # step 2: compute coherency

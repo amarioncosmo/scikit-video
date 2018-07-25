@@ -28,6 +28,8 @@ def gauss_window(lw, sigma):
 
 
 def canny(frame):
+
+    frame = [0,:,:,0]
     M, N = frame.shape
 
     v = np.median(frame)
