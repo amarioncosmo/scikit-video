@@ -1,2 +1,5 @@
 *.pyc
 *.swp
+build/
+dist/
+scikit_video.egg-info/
